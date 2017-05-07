@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打砖块</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			overflow: hidden;
+			color: #fff;
+		}
+		canvas{
+			/*margin: 50px;*/
+			background: #1e1e1e;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+ 
+	<canvas id="mycanvas"></canvas>
+	<script type="text/javascript" src="js/Game_00.js"></script>
+	<script type="text/javascript" src="js/Wall.js"></script>
+	<script type="text/javascript" src="js/Baffle.js"></script>
+	<script type="text/javascript" src="js/Ball.js"></script>
+	<script type="text/javascript" src="js/Block.js"></script>
+	<script type="text/javascript" src="js/SceneManager.js"></script>
+	<script type="text/javascript">
+		var game = new Game({
+			"canvasid":"#mycanvas",
+			"Resource":"Resource.json"
+		})
+	</script>
+</body>
+</html>
